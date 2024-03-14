@@ -1,4 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material';
+
 import Background from '../../../../assets/images/banner.png';
 
 export const Banner = () => {

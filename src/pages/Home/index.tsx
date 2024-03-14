@@ -1,5 +1,9 @@
 import { Box } from '@mui/material';
+
 import { Banner } from './components/Banner';
+import { Info } from './components/Info';
+import { Service } from './components/Service';
+import { Footer } from './components/Footer';
 
 export const Home = () => {
 	return (
@@ -11,6 +15,9 @@ export const Home = () => {
 			}}
 		>
 			<Banner />
+			<Info />
+			<Service />
+			<Footer />
 		</Box>
 	);
 };
