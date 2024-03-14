@@ -5,7 +5,7 @@ import Background from '../../../../assets/images/banner.png';
 export const Banner = () => {
 	return (
 		<Box
-			component="div"
+			component="section"
 			sx={{
 				width: '100%',
 				height: '100%',
@@ -17,102 +17,56 @@ export const Banner = () => {
 					width: '100%',
 					height: '100%',
 					background: `url(${Background})`,
-					backgroundSize: 'cover',
+					backgroundSize: '100% 100%',
 					backgroundPosition: 'center',
 					backgroundRepeat: 'no-repeat',
+					position: 'relative',
+					zIndex: 2,
 				}}
 			>
 				<Grid
 					container
 					spacing={{ xs: 2, sm: 2, md: 4 }}
-					columns={{ xs: 12, sm: 12, md: 12 }}
+					columns={{ xs: 12, sm: 12, md: 10 }}
 					sx={{
+						width: '100%',
+						height: '100%',
 						display: 'flex',
 						justifyContent: 'center',
-						alignItems: 'center',
 					}}
 				>
 					<Grid
 						item
-						xs={12}
-						sm={12}
-						md={4}
+						xs={6}
+						sm={6}
+						md={5}
 						sx={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center',
-							flexDirection: 'column',
-							mt: 15,
-							ml: 80,
+							mr: 35,
 						}}
 					>
 						<Typography
 							component="h1"
-							variant="h5"
+							variant="h6"
 							sx={{
 								color: '#fff',
-								fontSize: '50px',
-								fontWeight: 700,
-								letterSpacing: '2px',
-								mb: 10,
 							}}
 						>
-							Target
+							Eleve os seus{' '}
+							<span
+								style={{ color: '#ff0000', fontSize: '40px' }}
+							>
+								acertos
+							</span>{' '}
+							em uma agência que desde o início,
+							<br />
+							cuida de tudo para alcançar seus objetivos
 							<br />
 							<span
-								style={{
-									fontSize: '15px',
-									fontWeight: 0,
-									letterSpacing: 0,
-									position: 'relative',
-									top: '-35px',
-								}}
+								style={{ color: '#ff0000', fontSize: '40px' }}
 							>
-								marketing & tecnologia
+								&quot;em um universo de ideias.&quot;
 							</span>
-						</Typography>
-
-						<Typography
-							component="p"
-							variant="h6"
-							sx={{
-								color: '#fff',
-								fontSize: '20px',
-								letterSpacing: '2px',
-								mb: 4,
-							}}
-						>
-							Eleve seus resultados com
-						</Typography>
-
-						<Typography
-							component="h1"
-							variant="h5"
-							sx={{
-								color: '#fff',
-								fontSize: '40px',
-								fontWeight: 700,
-								letterSpacing: '2px',
-								mb: 4,
-								textAlign: 'center',
-							}}
-						>
-							Uma Agência de
-							<br />
-							Infinitas Possibilidades
-						</Typography>
-
-						<Typography
-							component="p"
-							variant="h6"
-							sx={{
-								color: '#fff',
-								fontSize: '20px',
-								textAlign: 'center',
-							}}
-						>
-							Desde o início uma agência que cuida de tudo que o
-							cliente precise para alcançar seus objetivos.
+							.
 						</Typography>
 					</Grid>
 				</Grid>

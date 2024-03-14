@@ -1,8 +1,10 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
 
-import Pet from '../../../../assets/images/pet.png';
+import { Logo } from './components/Logo';
 
 export const Info = () => {
+	const service = document.getElementById('service');
+
 	return (
 		<Box
 			component="section"
@@ -31,14 +33,7 @@ export const Info = () => {
 					}}
 				>
 					<Grid item xs={12} sm={12} md={4}>
-						<Box
-							component="img"
-							src={Pet}
-							sx={{
-								width: '100%',
-								height: '100%',
-							}}
-						/>
+						<Logo />
 					</Grid>
 
 					<Grid
@@ -78,6 +73,19 @@ export const Info = () => {
 							para cada negócio, de acordo com cada produto, com
 							cada mercado, com cada público.
 						</Typography>
+
+						<Button
+							variant="contained"
+							color="error"
+							sx={{
+								borderRadius: '20px',
+							}}
+							onClick={() =>
+								service?.scrollIntoView({ behavior: 'smooth' })
+							}
+						>
+							Nossos serviços.
+						</Button>
 					</Grid>
 				</Grid>
 			</Container>

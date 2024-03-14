@@ -1,9 +1,13 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+
 import { ListService } from './components/ListService';
 
 export const Service = () => {
+	const footer = document.getElementById('footer');
+
 	return (
 		<Box
+			id="service"
 			component="section"
 			sx={{
 				width: '100%',
@@ -65,6 +69,9 @@ export const Service = () => {
 							sx={{
 								borderRadius: '20px',
 							}}
+							onClick={() =>
+								footer?.scrollIntoView({ behavior: 'smooth' })
+							}
 						>
 							Conta para a gente o que você precisa.
 						</Button>
