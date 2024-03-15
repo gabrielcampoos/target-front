@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 
-import Pet from '../../../../assets/images/pet.png';
+import Pet from '../../../../assets/images/targui-foguete.png';
 import { BackgroundWave } from './BackgroundWave';
 
 export const Footer = () => {
@@ -76,8 +76,8 @@ export const Footer = () => {
 						component="img"
 						src={Pet}
 						sx={{
-							width: '100%',
-							height: '100%',
+							width: '50%',
+							height: '50%',
 							position: 'relative',
 							bottom: -180,
 						}}

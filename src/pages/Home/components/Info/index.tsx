@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 
 import { Logo } from './components/Logo';
+import Targui from '../../../../assets/images/targui.png';
 
 export const Info = () => {
 	const service = document.getElementById('service');
@@ -24,8 +25,8 @@ export const Info = () => {
 			>
 				<Grid
 					container
-					spacing={{ xs: 2, sm: 2, md: 10 }}
-					columns={{ xs: 12, sm: 12, md: 8 }}
+					spacing={{ xs: 2, sm: 2, md: 4 }}
+					columns={{ xs: 12, sm: 12, md: 12 }}
 					sx={{
 						display: 'flex',
 						justifyContent: 'center',
@@ -40,12 +41,15 @@ export const Info = () => {
 						item
 						xs={12}
 						sm={12}
-						md={4}
+						md={6}
 						sx={{
 							display: 'flex',
 							justifyContent: 'center',
 							alignItems: 'center',
 							flexDirection: 'column',
+							position: 'relative',
+							zIndex: 2,
+							top: -40,
 						}}
 					>
 						<Typography
@@ -86,6 +90,29 @@ export const Info = () => {
 						>
 							Nossos serviços.
 						</Button>
+					</Grid>
+					<Grid
+						item
+						xs={12}
+						sm={12}
+						md={2}
+						sx={{
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexDirection: 'column',
+							position: 'relative',
+							zIndex: 2,
+							top: -40,
+						}}
+					>
+						<Box
+							component="img"
+							src={Targui}
+							sx={{
+								background: 'transparent',
+							}}
+						/>
 					</Grid>
 				</Grid>
 			</Container>

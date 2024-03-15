@@ -21,7 +21,7 @@ export const Banner = () => {
 					backgroundPosition: 'center',
 					backgroundRepeat: 'no-repeat',
 					position: 'relative',
-					zIndex: 2,
+					zIndex: 1,
 				}}
 			>
 				<Grid

@@ -1,8 +1,8 @@
 .logo {
-    width: 300px;
-    height: 300px;
+    width: 950px;
+    height: 950px;
     animation: is-rotating 3s linear infinite ;
-    border: 30px solid #ff0000;
+    border: 90px solid #ff0000;
     display: inline-block;
     box-sizing: border-box;
     border-bottom-color: transparent;
@@ -10,10 +10,10 @@
 }
 
 .logoInf {
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 600px;
     animation: is-rotating-inf 2.5s linear infinite;
-    border: 30px solid #ff0000;
+    border: 90px solid #ff0000;
     display: inline-block;
     box-sizing: border-box;
     border-left-color: transparent;
