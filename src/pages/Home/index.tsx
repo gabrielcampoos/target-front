@@ -9,13 +9,7 @@ import { Service } from './components/Service';
 
 export const Home = () => {
 	return (
-		<Box
-			component="main"
-			sx={{
-				width: '100%',
-				height: '100vh',
-			}}
-		>
+		<Box component="main">
 			<Banner />
 			<Info />
 			<Service />
