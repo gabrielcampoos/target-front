@@ -1,0 +1,33 @@
+.logoSm {
+    width: 200px;
+    height: 200px;
+    animation: is-rotating 3s linear infinite ;
+    border: 25px solid #ff0000;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+}
+
+.logoInfSm {
+    width: 130px;
+    height: 130px;
+    animation: is-rotating-inf 2.5s linear infinite;
+    border: 25px solid #ff0000;
+    display: inline-block;
+    box-sizing: border-box;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes is-rotating-inf {
+    to {
+        transform: rotate(1turn);
+    }
+}

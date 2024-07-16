@@ -1,0 +1,33 @@
+.logo {
+    width: 950px;
+    height: 950px;
+    animation: is-rotating 3s linear infinite ;
+    border: 90px solid #ff0000;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+}
+
+.logoInf {
+    width: 600px;
+    height: 600px;
+    animation: is-rotating-inf 2.5s linear infinite;
+    border: 90px solid #ff0000;
+    display: inline-block;
+    box-sizing: border-box;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes is-rotating-inf {
+    to {
+        transform: rotate(1turn);
+    }
+}
