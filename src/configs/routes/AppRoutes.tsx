@@ -9,7 +9,10 @@ const AppRoutes: React.FC = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/conceitual" element={<Conceitual />} />
+				<Route
+					path="/conceitual-proposta-462"
+					element={<Conceitual />}
+				/>
 			</Routes>
 		</BrowserRouter>
 	);
