@@ -11,6 +11,7 @@ import { Banner } from './components/Banner';
 import { QrCode } from './components/QrCode';
 import { Boss } from './components/Boss';
 import Mark from '../../assets/images/mark.png';
+import { Parallax } from './components/Parallax';
 
 export const Conceitual = () => {
 	return (
@@ -174,6 +175,8 @@ export const Conceitual = () => {
 			>
 				<Banner />
 			</Box>
+
+			<Parallax />
 
 			<Box
 				component="section"
