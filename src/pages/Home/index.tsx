@@ -7,18 +7,23 @@ import { Footer } from './components/Footer';
 import { Info } from './components/Info';
 import { Service } from './components/Service';
 import { Courses } from './components/Courses';
+import { Restrict } from './components/Restrict';
 
 export const Home = () => {
 	return (
-		<Box component="main" sx={{
-			background: '#000',
-			color: '#fff'
-		}}>
+		<Box
+			component="main"
+			sx={{
+				background: '#000',
+				color: '#fff',
+			}}
+		>
 			<Banner />
 			<Info />
 			<Service />
 			<Courses />
 			<Footer />
+			<Restrict />
 			<FloatingActionButtonSize />
 		</Box>
 	);

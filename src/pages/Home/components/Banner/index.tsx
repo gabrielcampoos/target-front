@@ -1,4 +1,11 @@
-import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
+import {
+	Box,
+	Button,
+	Grid,
+	Typography,
+	useMediaQuery,
+	useTheme,
+} from '@mui/material';
 
 import Background from '../../../../assets/images/banner.png';
 import { BannerSm } from './BannerSm';
