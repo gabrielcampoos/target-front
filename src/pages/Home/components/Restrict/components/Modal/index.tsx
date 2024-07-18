@@ -53,7 +53,7 @@ export default function ModalRestrict({
 					<Button
 						onClick={() => {
 							if (code === '380') {
-								navigate('/conceitual-proposta-462');
+								navigate('/portfolio');
 							}
 						}}
 						autoFocus
