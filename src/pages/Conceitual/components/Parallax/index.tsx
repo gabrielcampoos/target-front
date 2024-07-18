@@ -1,12 +1,16 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import './styles.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect } from 'react';
 import BgKitchen from '../../../../assets/images/bg-cozinha.jpg';
 import Logo from '../../../../assets/images/logoConceitual-2.png';
+import { ParallaxSm } from './ParallaxSm';
 
 export const Parallax = () => {
+	const theme = useTheme();
+	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
+
 	useLayoutEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
@@ -51,88 +55,96 @@ export const Parallax = () => {
 
 	return (
 		<>
-			<Box
-				sx={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					width: '100%',
-					height: '100%',
-				}}
-			>
-				<Box
-					component="div"
-					className="zoomText"
-					sx={{
-						display: 'flex',
-						justifyContent: 'center',
-						alignItems: 'center',
-						background: `url(${BgKitchen})`,
-						backgroundSize: 'cover',
-						backgroundPosition: 'center',
-						backgroundRepeat: 'no-repeat',
-						position: 'absolute',
-						backgroundClip: 'text',
-						WebkitBackgroundClip: 'text',
-						color: 'transparent',
-						zIndex: 2,
-						animationDelay: '2s',
-					}}
-				>
-					<Typography
-						sx={{
-							fontSize: '12rem',
-							WebkitTextFillColor: 'transparent',
-							WebkitTextStrokeColor: '#fff',
-							WebkitTextStrokeWidth: '2px',
-							fontWeight: 700,
-						}}
-					>
-						LIVE
-						<br />
-						YOUR
-						<br />
-						DREAM
-					</Typography>
-				</Box>
-			</Box>
-			<Box
-				sx={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					width: '100%',
-					height: '100%',
-				}}
-			>
-				<Box
-					component="div"
-					className="zoomImage"
-					sx={{
-						width: '10%',
-						height: '10%',
-						background: `url(${BgKitchen})`,
-						backgroundSize: 'cover',
-						backgroundPosition: 'center',
-						backgroundRepeat: 'no-repeat',
-						position: 'absolute',
-						zIndex: 1,
-					}}
-				>
+			{(smDown && (
+				<>
+					<ParallaxSm />
+				</>
+			)) || (
+				<>
 					<Box
 						sx={{
-							width: '100%',
-							height: '100%',
 							display: 'flex',
 							justifyContent: 'center',
 							alignItems: 'center',
-							opacity: 0.5,
+							width: '100%',
+							height: '100%',
 						}}
 					>
-						<Box component="img" src={Logo} />
+						<Box
+							component="div"
+							// className="zoomText"
+							sx={{
+								display: 'flex',
+								justifyContent: 'center',
+								alignItems: 'center',
+								background: `url(${BgKitchen})`,
+								backgroundSize: 'cover',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat',
+								position: 'absolute',
+								backgroundClip: 'text',
+								WebkitBackgroundClip: 'text',
+								color: 'transparent',
+								zIndex: 2,
+								animationDelay: '2s',
+							}}
+						>
+							<Typography
+								sx={{
+									fontSize: '12rem',
+									WebkitTextFillColor: 'transparent',
+									WebkitTextStrokeColor: '#fff',
+									WebkitTextStrokeWidth: '2px',
+									fontWeight: 700,
+								}}
+							>
+								LIVE
+								<br />
+								YOUR
+								<br />
+								DREAM
+							</Typography>
+						</Box>
 					</Box>
-				</Box>
-			</Box>
+					<Box
+						sx={{
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+							width: '100%',
+							height: '100%',
+						}}
+					>
+						<Box
+							component="div"
+							// className="zoomImage"
+							sx={{
+								width: '10%',
+								height: '10%',
+								background: `url(${BgKitchen})`,
+								backgroundSize: 'cover',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat',
+								position: 'absolute',
+								zIndex: 1,
+							}}
+						>
+							<Box
+								sx={{
+									width: '100%',
+									height: '100%',
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+									opacity: 0.5,
+								}}
+							>
+								<Box component="img" src={Logo} />
+							</Box>
+						</Box>
+					</Box>
+				</>
+			)}
 		</>
 	);
 };
