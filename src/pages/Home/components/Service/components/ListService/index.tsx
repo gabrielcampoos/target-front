@@ -9,8 +9,13 @@ import Site from '../../../../../../assets/images/site bolsa.png';
 import Social from '../../../../../../assets/images/social media bolsa.png';
 import Video from '../../../../../../assets/images/video bolsa.png';
 import MyCard from '../Card';
+import { useEffect, useState } from 'react';
 
-export const ListService = () => {
+interface ListServiceProps {
+	color: string;
+}
+
+export const ListService = ({ color }: ListServiceProps) => {
 	return (
 		<Box
 			component="div"
@@ -40,12 +45,14 @@ export const ListService = () => {
 						alignItems: 'center',
 						width: '100%',
 						height: '100%',
+						color: color,
 					}}
 				>
 					<MyCard
 						img={Politico}
 						title="Gestão de campanhas politicas"
 						text="Impulsione sua campanha política! Estratégias dinâmicas, comunicação eficaz e análise de dados para alcançar eleitores de maneira impactante. Vamos vencer juntos!"
+						color={color}
 					/>
 				</Grid>
 
@@ -54,6 +61,7 @@ export const ListService = () => {
 						img={Logo}
 						title="Desenvolvimento de logomarca"
 						text="Crie uma identidade única! Desenvolvemos logomarcas que refletem a essência da sua marca, destacando-a no mercado com estilo e personalidade. Vamos dar vida à sua marca!"
+						color={color}
 					/>
 				</Grid>
 
@@ -62,6 +70,7 @@ export const ListService = () => {
 						img={Fachada}
 						title="Fachada digital"
 						text="Transforme sua presença online! Com a Fachada Digital, destacamos sua marca na web, criando uma imagem impactante que atrai e conquista clientes. Vamos brilhar juntos no mundo digital!"
+						color={color}
 					/>
 				</Grid>
 
@@ -70,6 +79,7 @@ export const ListService = () => {
 						img={Form}
 						title="Pesquisa de Marketing"
 						text="Desbloqueie insights valiosos com nossa Pesquisa de Marketing! Analisamos seu mercado-alvo para oferecer dados precisos e estratégias eficazes. Vamos impulsionar seus negócios com inteligência e precisão!"
+						color={color}
 					/>
 				</Grid>
 
@@ -78,6 +88,7 @@ export const ListService = () => {
 						img={Gestao}
 						title="Gestão de trafego"
 						text="Maximize seu alcance online! Com a Gestão de Tráfego, direcionamos visitantes qualificados para o seu site, impulsionando sua presença e conversões. Vamos dominar o digital juntos!"
+						color={color}
 					/>
 				</Grid>
 
@@ -86,6 +97,7 @@ export const ListService = () => {
 						img={Site}
 						title="Sites"
 						text="Construímos sua presença online! Sites impressionantes, funcionais e personalizados para impulsionar sua marca e conectar com seu público-alvo. Vamos criar sua plataforma digital de sucesso juntos!"
+						color={color}
 					/>
 				</Grid>
 
@@ -94,6 +106,7 @@ export const ListService = () => {
 						img={Social}
 						title="Social Media"
 						text="Maximize sua presença online com nossa expertise em Social Mídia! Criamos estratégias personalizadas e conteúdo envolvente para impulsionar sua marca e envolver seu público-alvo. Vamos alcançar resultados extraordinários juntos!"
+						color={color}
 					/>
 				</Grid>
 
@@ -102,6 +115,7 @@ export const ListService = () => {
 						img={Video}
 						title="Video Maker"
 						text="Crie vídeos excepcionais conosco! Nossa equipe de Video Maker transforma sua narrativa em produções visualmente cativantes e envolventes. Deixe-nos contar sua história de forma impactante e memorável!"
+						color={color}
 					/>
 				</Grid>
 			</Grid>

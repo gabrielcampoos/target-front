@@ -8,11 +8,12 @@ interface MyCardProps {
 	img: string;
 	title: string;
 	text: string;
+	color: string;
 }
 
-export default function MyCard({ img, text, title }: MyCardProps) {
+export default function MyCard({ img, text, title, color }: MyCardProps) {
 	return (
-		<Card sx={{ maxWidth: 350, background: 'transparent', color: '#fff' }}>
+		<Card sx={{ maxWidth: 350, background: 'transparent', color: color }}>
 			<CardActionArea>
 				<Box
 					sx={{
@@ -64,7 +65,7 @@ export default function MyCard({ img, text, title }: MyCardProps) {
 							variant="h6"
 							component="div"
 							sx={{
-								color: '#fff',
+								color: color,
 							}}
 						>
 							{title}
@@ -73,7 +74,7 @@ export default function MyCard({ img, text, title }: MyCardProps) {
 							variant="subtitle2"
 							color="text.secondary"
 							sx={{
-								color: '#fff',
+								color: color,
 							}}
 						>
 							{text}

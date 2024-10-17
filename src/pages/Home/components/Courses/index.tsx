@@ -52,7 +52,6 @@ export const Courses = () => {
 					<Grid item xs={6} sm={6} md={4}>
 						<Typography
 							sx={{
-								textAlign: 'justify',
 								fontWeight: 700,
 							}}
 						>

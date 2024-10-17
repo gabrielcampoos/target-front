@@ -10,7 +10,7 @@ export const FooterSm = () => {
 			component="footer"
 			sx={{
 				width: '100%',
-				mt: 3,
+				mt: 1,
 			}}
 		>
 			<Grid
@@ -35,6 +35,7 @@ export const FooterSm = () => {
 						alignItems: 'center',
 						flexDirection: 'column',
 						gap: 1,
+						mb: 5,
 					}}
 				>
 					<Typography
@@ -92,20 +93,19 @@ export const FooterSm = () => {
 						flexDirection: 'column',
 						position: 'relative',
 						zIndex: 2,
-						top: 100,
 					}}
 				>
 					<Box
 						component="img"
 						src={Pet}
 						sx={{
+							position: 'relative',
 							width: '60%',
 							height: '60%',
 						}}
 					/>
 				</Grid>
 			</Grid>
-			<BackgroundWaveSm />
 		</Box>
 	);
 };

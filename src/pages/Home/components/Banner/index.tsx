@@ -9,6 +9,7 @@ import {
 
 import Background from '../../../../assets/images/banner.png';
 import { BannerSm } from './BannerSm';
+import CustomizedSwitches from '../Switch';
 
 export const Banner = () => {
 	const theme = useTheme();

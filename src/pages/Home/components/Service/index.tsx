@@ -11,7 +11,11 @@ import {
 import { ListService } from './components/ListService';
 import { ServiceSm } from './ServiceSm';
 
-export const Service = () => {
+interface ServiceProps {
+	color: string;
+}
+
+export const Service = ({ color }: ServiceProps) => {
 	const footer = document.getElementById('footer');
 
 	const theme = useTheme();
@@ -98,7 +102,7 @@ export const Service = () => {
 								</Button>
 							</Grid>
 						</Grid>
-						<ListService />
+						<ListService color={color} />
 					</Container>
 				</Box>
 			)}
