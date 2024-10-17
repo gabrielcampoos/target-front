@@ -31,7 +31,7 @@ export const Banner = () => {
 									gap: 3,
 								}}
 							>
-								<Typography
+								{/* <Typography
 									component="h1"
 									variant="h4"
 									sx={{
@@ -68,7 +68,7 @@ export const Banner = () => {
 										DISNEY para obter um desconto de 10% em
 										todos os pacotes.
 									</Typography>
-								</Box>
+								</Box> */}
 
 								<Box component="img" src={BannerOut} />
 							</Box>

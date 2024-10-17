@@ -16,6 +16,9 @@ export const Banner = () => {
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
 
+	const [open, setOpen] = useState(false);
+	const [code, setCode] = useState('');
+
 	return (
 		<>
 			{(smDown && (

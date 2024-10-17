@@ -36,23 +36,21 @@ export const Restrict = () => {
 								sx={{
 									width: '100%',
 									display: 'flex',
-									justifyContent: 'center',
+									justifyContent: 'flex-start',
 									alignItems: 'center',
 									p: 3,
 								}}
 							>
-								<Typography
-									component="h1"
-									variant="h4"
-									sx={{
-										fontWeight: 700,
-										color: '#fff',
-									}}
+								<Button
+									variant="contained"
+									color="error"
+									size="small"
+									onClick={() => setOpen(true)}
 								>
-									Portfólio
-								</Typography>
+									Área Restrita
+								</Button>
 							</Box>
-							<Box
+							{/* <Box
 								sx={{
 									width: '20%',
 									height: '300px',
@@ -84,7 +82,7 @@ export const Restrict = () => {
 										Conceitual
 									</Button>
 								</Box>
-							</Box>
+							</Box> */}
 						</Grid>
 					</Grid>
 				</>

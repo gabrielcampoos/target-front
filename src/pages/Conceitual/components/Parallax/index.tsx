@@ -98,11 +98,11 @@ export const Parallax = () => {
 									fontWeight: 700,
 								}}
 							>
-								LIVE
+								VIVA
 								<br />
-								YOUR
+								SEUS
 								<br />
-								DREAM
+								SONHOS
 							</Typography>
 						</Box>
 					</Box>

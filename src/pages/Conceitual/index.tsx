@@ -189,7 +189,7 @@ export const Conceitual = () => {
 
 						<Parallax />
 
-						<Box
+						{/* <Box
 							component="section"
 							sx={{
 								width: '100%',
@@ -213,7 +213,7 @@ export const Conceitual = () => {
 							}}
 						>
 							<Boss />
-						</Box>
+						</Box> */}
 					</Box>
 				</>
 			)}
