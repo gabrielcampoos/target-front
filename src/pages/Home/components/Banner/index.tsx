@@ -10,14 +10,12 @@ import {
 import Background from '../../../../assets/images/banner.png';
 import { BannerSm } from './BannerSm';
 import CustomizedSwitches from '../Switch';
+import { useState } from 'react';
 
 export const Banner = () => {
 	const theme = useTheme();
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
-
-	const [open, setOpen] = useState(false);
-	const [code, setCode] = useState('');
 
 	return (
 		<>
